@@ -1,7 +1,7 @@
 class EndPoints {
   static String baseUrl = 'https://student.valuxapps.com/api/';
   static String signup = 'user/signup';
-  static String signIn = 'user/signin';
+  static String login = 'login';
   static String updateUser = 'user/update';
   static String getUser (id){
     return 'user/get-user/$id';
