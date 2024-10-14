@@ -15,6 +15,7 @@ import '../../core/widget_share/app_text_form_filed.dart';
 import '../../core/widget_share/button.dart';
 import '../../core/widget_share/dialog_message_in_bottom.dart';
 import '../widget/login_widget.dart';
+import 'signup.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -56,9 +57,10 @@ class Login extends StatelessWidget {
                               SizedBox(
                                 height: 30,
                               ),
-                              FormLoginScreen(
+                              LoginCubit.get(context).isLogin ? FormLoginScreen(
                                 state: state,
                               )
+                             : Signup()
                             ],
                           ),
                         ),
