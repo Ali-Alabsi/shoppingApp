@@ -1,6 +1,6 @@
 class EndPoints {
   static String baseUrl = 'https://student.valuxapps.com/api/';
-  static String signup = 'user/signup';
+  static String signup = 'register';
   static String login = 'login';
   static String updateUser = 'user/update';
   static String getUser (id){
@@ -15,6 +15,7 @@ class EndPoints {
 class ApiKey{
   static String status = 'status';
   static String email = 'email';
+  static String image = 'image';
   static String password = 'password';
   static String acceptLanguage = 'Accept-Language';
   static String errorMessage = 'ErrorMessage';
